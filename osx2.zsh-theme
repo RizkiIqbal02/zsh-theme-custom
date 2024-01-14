@@ -2,7 +2,7 @@ if [[ "$USER" == "root" ]]; then
   PROMPT="%(?:%{$fg_bold[red]%}%{$fg_bold[green]%}%{$fg_bold[yellow]%} :%{$fg_bold[red]%} )"
   PROMPT+='%{$fg[cyan]%}  %c%{$reset_color%} $(git_prompt_info)'
 else
-  PROMPT="%F{8}%K{8}% :%{$fg_bold[white]%} %{%k%}%F{8}%f"
+  PROMPT="%F{8}%K{8}% %{$fg_bold[white]%}  %{%k%}%F{8}%f"
   PROMPT+="%F{8}%K{8}%(?:%{$fg_bold[red]%}● %{$fg_bold[yellow]%}● %{$fg_bold[green]%}●%{%k%}%F{8}%f :%{$fg_bold[red]%}  %{%k%}%F{8}%f )"
   #PROMPT+='%{$fg[cyan]%}  %c%{$reset_color%} $(git_prompt_info)'
 fi
