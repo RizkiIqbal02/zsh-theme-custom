@@ -12,8 +12,8 @@ DIR_PATH="%F{8}%K{8} %F{7}  %F{7}%$NUM_DIR~ %{%k%}%F{8}"
 background_jobs="%(1j.%F{8}%K{8} %F{3} %{%k%}%F{8}%f.)"
 non_zero_return_value="%(0?..%F{8}%K{8} %F{1}  %{%k%}%F{8}%f)"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%F{8}%K{8} %F{7} %K{8} "
-ZSH_THEME_GIT_PROMPT_SUFFIX=" %{%k%}%F{8} %{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}  "
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{8}%K{87}  %K{8}"
+ZSH_THEME_GIT_PROMPT_SUFFIX=" %{%k%}%F{8}%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} "
 
 RPROMPT='$DIR_PATH $(git_prompt_info) $background_jobs'
